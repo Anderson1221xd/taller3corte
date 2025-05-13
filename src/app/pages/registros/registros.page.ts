@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 interface Registro {
   id?: string;
   descripcion: string;
-  fecha: any; // Firebase puede traerlo como Timestamp
+  fecha: any; 
   imagenUrl: string;
 }
 
