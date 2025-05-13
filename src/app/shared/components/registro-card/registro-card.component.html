@@ -1,0 +1,9 @@
+<ion-card>
+  <img [src]="registro.imagenUrl" alt="Imagen" />
+  <ion-card-header>
+    <ion-card-title>{{ registro.descripcion }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>📅 {{ registro.fecha | date : "medium" }}</p>
+  </ion-card-content>
+</ion-card>

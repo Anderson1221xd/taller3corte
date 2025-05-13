@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <app-registro-card
+    *ngFor="let item of registros$ | async"
+    [registro]="item"
+  ></app-registro-card>
+</ion-content>

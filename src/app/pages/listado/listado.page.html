@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of registros">
+      <ion-thumbnail slot="start">
+        <img [src]="item.imagenUrl" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.descripcion }}</h2>
+        <p>{{ item.fecha }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859600216157",
+    "project_id": "taller3corte-7562a",
+    "storage_bucket": "taller3corte-7562a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859600216157:android:246e477cd66933a2642db4",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGG93D7-TA3kDZUX29orShWOdIsVkLxgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
