@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
   formulario: FormGroup;
   fotoBase64: string | null = null;
   fotoPreview: string | null = null;
-  ultimosRegistros: any[] = []; // NUEVO: registros para mostrar en pantalla
+  ultimosRegistros: any[] = []; 
 
   constructor(
     private fb: FormBuilder,
@@ -69,16 +69,16 @@ export class HomePage implements OnInit {
         );
       });
 
-      // Guardar en Preferences
+      
       const previos = await Preferences.get({ key: 'registros' });
       let lista = previos.value ? JSON.parse(previos.value) : [];
       lista.unshift(registro);
       await Preferences.set({ key: 'registros', value: JSON.stringify(lista) });
 
-      // Mostrar en pantalla
+    
       this.cargarRegistrosLocales();
 
-      // Limpiar formulario
+    
       this.formulario.reset();
       this.fotoBase64 = null;
       this.fotoPreview = null;
